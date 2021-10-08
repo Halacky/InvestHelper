@@ -17,10 +17,10 @@ export default function App() {
         initialRouteName="Home"
         screenOptions={{ headerShown: false }}
       >
+        <Stack.Screen name="LoginScreen" component={LoginScreen} />
         <Stack.Screen name="MainScreen" component={MainScreen} />
         <Stack.Screen name="InteractScreen" component={InteractScreen} />
         <Stack.Screen name="SettingsScreen" component={SettingsScreen} />
-        <Stack.Screen name="LoginScreen" component={LoginScreen} />
         <Stack.Screen name="SignupScreen" component={SignupScreen} />
         <Stack.Screen name="ForgotpasswordScreen" component={ForgotpasswordScreen} />
       </Stack.Navigator>
