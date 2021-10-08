@@ -44,18 +44,34 @@ const LoginScreen = props => {
 
       <FormButton
         buttonTitle="Войти"
-        onPress={() => 
-            //login(email, password),
-            navigation.navigate('MainScreen', {})}
+        onPress={() => {
+          try {
+            navigation.navigate('MainScreen', {});
+          } catch (err) {
+            console.error(err);
+          }
+        }}
       />
 
-      <TouchableOpacity style={styles.forgotButton} onPress={() => {navigation.navigate('ForgotpasswordScreen')}}>
+      <TouchableOpacity style={styles.forgotButton} onPress={() => {
+        try {
+          navigation.navigate('ForgotpasswordScreen', {});
+        } catch (err) {
+          console.error(err);
+        }
+      }}>
         <Text style={styles.navButtonText}>Забыли пароль?</Text>
       </TouchableOpacity>
 
       <TouchableOpacity
         style={styles.forgotButton}
-        onPress={() => navigation.navigate('SignupScreen')}>
+        onPress={() => {
+          try {
+            navigation.navigate('SignupScreen', {});
+          } catch (err) {
+            console.error(err);
+          }
+        }}>
         <Text style={styles.navButtonText}>
           Еще не зарегестрированы? Создать аккаунт
         </Text>
