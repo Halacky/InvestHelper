@@ -36,7 +36,7 @@ const WelcomeScreen = props => {
             <Button
               onPress={() => {
                 try {
-                  navigation.navigate('BlankScreen', {});
+                  navigation.navigate('ModalScreen');
                 } catch (err) {
                   console.error(err);
                 }

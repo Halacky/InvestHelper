@@ -4,6 +4,8 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import WelcomeScreen from './screens/WelcomeScreen';
 import BlankScreen from './screens/BlankScreen';
+import ModalScreen from './screens/ModalScreen';
+
 
 const Stack = createNativeStackNavigator();
 
@@ -13,6 +15,7 @@ export default function App() {
     <Stack.Navigator initialRouteName="Home">
       <Stack.Screen name="WelcomeScreen" component={WelcomeScreen} />
       <Stack.Screen name="BlankScreen" component={BlankScreen} />
+      <Stack.Screen name="ModalScreen" component={ModalScreen} />
     </Stack.Navigator>
   </NavigationContainer>
   );
