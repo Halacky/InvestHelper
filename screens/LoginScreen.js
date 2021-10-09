@@ -1,83 +1,104 @@
-import React, {useContext, useState} from 'react';
-import styles from '../Styles/styles';
+import React from 'react';
 import {
-  View,
-  Text,
-  TouchableOpacity,
+  Button,
+  Container,
+  ScreenContainer,
+  TextField,
+  Touchable,
+} from '@draftbit/ui';
+import {
   Image,
-  Platform,
-  StyleSheet,
-  ScrollView
+  KeyboardAvoidingView,
+  StatusBar,
+  Text,
 } from 'react-native';
-import FormInput from '../components/FormInput';
-import FormButton from '../components/FormButton';
+import styles from '../Styles/styles';
 
 const LoginScreen = props => {
-  const [email, setEmail] = useState();
-  const [password, setPassword] = useState();
+
+  const [email, setEmail] = React.useState(undefined);
+  const [password, setPassword] = React.useState(undefined);
   const { navigation } = props;
 
+  React.useEffect(() => {
+    StatusBar.setBarStyle('dark-content');
+  }, []);
+
   return (
-    <ScrollView contentContainerStyle={styles.containerLS}>
-      <Image
-        //source={require('../assets/rn-social-logo.png')}
-        style={styles.logo}
-      />
-      <Text style={styles.text}>VTB HACK2021-0DAY</Text>
-
-      <FormInput
-        labelValue={email}
-        onChangeText={(userEmail) => setEmail(userEmail)}
-        placeholderText="Email"
-        iconType="user"
-        keyboardType="email-address"
-        autoCapitalize="none"
-        autoCorrect={false}
-      />
-
-      <FormInput
-        labelValue={password}
-        onChangeText={(userPassword) => setPassword(userPassword)}
-        placeholderText="Пароль"
-        iconType="lock"
-        secureTextEntry={true}
-      />
-
-      <FormButton
-        buttonTitle="Войти"
-        onPress={() => {
-          try {
-            navigation.navigate('MainScreen', {});
-          } catch (err) {
-            console.error(err);
-          }
-        }}
-      />
-
-      <TouchableOpacity style={styles.forgotButton} onPress={() => {
-        try {
-          navigation.navigate('ForgotpasswordScreen', {});
-        } catch (err) {
-          console.error(err);
-        }
-      }}>
-        <Text style={styles.navButtonText}>Забыли пароль?</Text>
-      </TouchableOpacity>
-
-      <TouchableOpacity
-        style={styles.forgotButton}
-        onPress={() => {
-          try {
-            navigation.navigate('SignupScreen', {});
-          } catch (err) {
-            console.error(err);
-          }
-        }}>
-        <Text style={styles.navButtonText}>
-          Еще не зарегестрированы? Создать аккаунт
-        </Text>
-      </TouchableOpacity>
-    </ScrollView>
+    <ScreenContainer scrollable={true} hasSafeArea={true}>
+      <KeyboardAvoidingView
+        style={styles.keyboardAvoidingView}
+        behavior="padding"
+        keyboardVerticalOffset={60}
+        enabled={true}
+      >
+        <Container
+          style={styles.ContainerHeader}
+          elevation={0}
+          useThemeGutterPadding={true}
+        >
+          <Image
+            style={styles.image100}
+            resizeMode="cover"
+          />
+          <Text style={styles.BigText}>
+            VTB HACK2021-0DAY
+          </Text>
+        </Container>
+        <Container useThemeGutterPadding={true} elevation={0}>
+          <TextField
+            style={styles.TextFieldSimple}
+            onChangeText={email => setEmail(email)}
+            value={email}
+            keyboardType="email-address"
+            label="Email"
+            type="underline"
+          />
+          <TextField
+            style={styles.TextFieldSimple}
+            onChangeText={password => setPassword(password)}
+            secureTextEntry={true}
+            value={password}
+            leftIconMode="inset"
+            keyboardType="default"
+            label="Password"
+            type="underline"
+          />
+          <Button type="solid" onPress={() => {
+              try {
+                navigation.navigate('MainScreen', {});
+              } catch (err) {
+                console.error(err);
+              }
+            }}
+          >
+            Sign In
+          </Button>
+          <Touchable onPress={() => {
+            try {
+              navigation.navigate('ForgotpasswordScreen', {});
+            } catch (err) {
+              console.error(err);
+            }
+          }}>
+            <Text style={styles.TextLinkRight}>
+              Забыли пароль?
+            </Text>
+          </Touchable>
+          <Touchable onPress={() => {
+            try {
+              navigation.navigate('SignupScreen', {});
+            } catch (err) {
+              console.error(err);
+            }
+          }}>
+            <Text style={styles.TextLinkRight}>
+              Регистрация
+            </Text>
+          </Touchable>
+        </Container>
+      </KeyboardAvoidingView>
+    </ScreenContainer>
   );
 };
 
