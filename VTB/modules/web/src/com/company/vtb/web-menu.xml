@@ -2,5 +2,6 @@
 <menu-config xmlns="http://schemas.haulmont.com/cuba/menu.xsd">
     <menu id="application-vtb" insertBefore="administration" caption="mainMsg://menu_config.application-vtb">
         <item screen="vtb_" caption="mainMsg://menu_config.vtb_"/>
+        <item screen="vtb_Client.browse" caption="mainMsg://menu_config.vtb_Client.browse"/>
     </menu>
 </menu-config>

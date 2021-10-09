@@ -5,6 +5,9 @@
             <param name="login"/>
             <param name="password"/>
         </method>
+        <method name="getInfoFromUser">
+            <param name="id"/>
+        </method>
     </service>
 </services>
 

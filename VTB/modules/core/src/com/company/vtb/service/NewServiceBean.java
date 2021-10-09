@@ -1,5 +1,6 @@
 package com.company.vtb.service;
 
+import com.company.vtb.entity.Client;
 import com.haulmont.cuba.core.global.DataManager;
 import com.haulmont.cuba.core.global.Metadata;
 import com.haulmont.cuba.core.global.PasswordEncryption;
@@ -8,6 +9,8 @@ import com.haulmont.cuba.security.entity.User;
 import org.springframework.stereotype.Service;
 
 import javax.inject.Inject;
+import java.util.List;
+import java.util.UUID;
 
 @Service(NewService.NAME)
 public class NewServiceBean implements NewService {
@@ -33,5 +36,13 @@ public class NewServiceBean implements NewService {
         user.setLanguage("en");
 
         dataManager.commit(user, userRole);
+    }
+
+    @Override
+    public List<Client> getInfoFromUser(UUID id) {
+        return dataManager.load(Client.class).query("select e from vtb_Client e where e.user.id = :id")
+                .parameter("id", id)
+                .viewProperties("user.name", "user.lastName", "user.middleName", "user.email", "balance", "completeCourse", "levelFinance", "timeFirstSession")
+                .list();
     }
 }
