@@ -11,22 +11,16 @@ import {
 
 const MyModal = props => {
 
-    var isVisible =false;
-
+    var isVisible = false;
     const [ state, setState ] = useState(isVisible);
-
-    const showModal = () =>{
-        isVisible = true;
-        setState(isVisible)
-        console.log("Gg");
-    }
 
     const closeModal = () =>{
         isVisible = false;
         setState(isVisible)
-        console.log("Gg");
+        console.log(state);
+        console.log(props.state);
+
     }
-    
   return (
     <View style={styles.ViewCard} pointerEvents="auto">
       <Modal

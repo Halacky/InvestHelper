@@ -36,7 +36,7 @@ const ModalScreen = props => {
         <Modal
             animationType = {"slide"}
             transparent = {true}
-            visible={state}
+            visible={props.state}
             onRequestClose={() => {
               Alert.alert('Modal has now been closed.');
             }}>
