@@ -16,6 +16,35 @@ const LoginScreen = props => {
   const [password, setPassword] = useState();
   const { navigation } = props;
 
+var qs = require("querystring");
+var http = require("https");
+
+var options = {
+  "method": "POST",
+  "hostname": "back-vtb-hack-2021.herokuapp.com",
+  "port": null,
+  "path": "/rest/v2/oauth/token",
+  "headers": {
+    "content-type": "application/x-www-form-urlencoded",
+    "authorization": "Basic dnRiLWtWTkdKZW40OjQ2MjJiYTA4MmI4MTBhNWRiMjc3MThjYzVhYjA0ODFjZmVlMWM5NTJhNTRlM2YyNWY1NzZlZjM4ZTYwYmM0NWU=",
+    "cache-control": "no-cache",
+    "postman-token": "7aa9e082-86ed-f595-3365-b4564ad5926c"
+  }
+};
+
+var req = http.request(options, function (res) {
+  var chunks = [];
+
+  res.on("data", function (chunk) {
+    chunks.push(chunk);
+  });
+
+  res.on("end", function () {
+    var body = Buffer.concat(chunks);
+    console.log(body.toString());
+  });
+});
+
   return (
     <ScrollView contentContainerStyle={styles.container}>
       <Image
@@ -46,6 +75,8 @@ const LoginScreen = props => {
         buttonTitle="Войти"
         onPress={() => {
           try {
+            req.write(qs.stringify({ grant_type: 'password', username: email, password: password }));
+            req.end();
             navigation.navigate('MainScreen', {});
           } catch (err) {
             console.error(err);
