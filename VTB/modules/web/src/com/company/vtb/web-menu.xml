@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<menu-config xmlns="http://schemas.haulmont.com/cuba/menu.xsd">
+    <menu id="application-vtb" insertBefore="administration" caption="mainMsg://menu_config.application-vtb">
+        <item screen="vtb_" caption="mainMsg://menu_config.vtb_"/>
+    </menu>
+</menu-config>
