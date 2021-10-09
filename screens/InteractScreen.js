@@ -1,8 +1,11 @@
 import React from 'react';
 import { FAB, ScreenContainer} from '@draftbit/ui';
-import { StatusBar, StyleSheet, View } from 'react-native';
+import { StatusBar, StyleSheet, View,Dimensions } from 'react-native';
 import InfoCard from '../components/InfoCardComponent';
 import TwoOptions from '../components/TwoOptionsComponent';
+import Chart from '../components/ChartComponent';
+
+
 
 const InteractScreen = props => {
 
@@ -36,11 +39,16 @@ const InteractScreen = props => {
         {/* PASTE CONTENT AFTER THIS */}
         <InfoCard/>
         <TwoOptions/>
+        <Chart
+        />
         {/* END CONTENT */}
       </View>
     </ScreenContainer>
   );
 };
+
+
+
 
 const styles = StyleSheet.create({
   ViewTopBar: {
