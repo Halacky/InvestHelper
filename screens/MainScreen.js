@@ -23,7 +23,13 @@ const MainScreen = props => {
         style={styles.ViewTopBar}
         pointerEvents="auto"
       >
-        <FAB iconSize={32} iconName="FontAwesome/question" />
+        <FAB iconSize={32} iconName="FontAwesome/question" onPress={() => {
+            try {
+              navigation.navigate('ModalScreen', {});
+            } catch (err) {
+              console.error(err);
+            }
+          }}/>
         <FAB
           onPress={() => {
             try {

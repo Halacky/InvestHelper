@@ -7,6 +7,8 @@ import SettingsScreen from './screens/SettingsScreen';
 import LoginScreen from './screens/LoginScreen';
 import SignupScreen from './screens/SignupScreen';
 import ForgotpasswordScreen from './screens/ForgotpasswordScreen';
+import ModalScreen from './screens/ModalScreens';
+
 
 const Stack = createNativeStackNavigator();
 
@@ -23,6 +25,8 @@ export default function App() {
         <Stack.Screen name="SettingsScreen" component={SettingsScreen} />
         <Stack.Screen name="SignupScreen" component={SignupScreen} />
         <Stack.Screen name="ForgotpasswordScreen" component={ForgotpasswordScreen} />
+        <Stack.Screen name="ModalScreen" component={ModalScreen} />
+
       </Stack.Navigator>
     </NavigationContainer>
   );
