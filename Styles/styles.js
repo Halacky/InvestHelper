@@ -271,7 +271,38 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     padding: 20,
   },
-  
+
+  //------------------------
+  TextLinkRight: {
+    marginTop: 5,
+    marginLeft: 5,
+    marginRight: 5,
+    marginBottom: 5,
+    color: '#5A45FF',
+    textAlign: 'right',
+  },
+  TextFieldSimple: {
+    marginBottom: 16,
+  },
+  keyboardAvoidingView: {
+    flexGrow: 1,
+    justifyContent: 'space-around',
+  },
+  BigText: {
+    fontSize: 40,
+    marginBottom: 10,
+    alignSelf: 'center',
+    textAlign: 'center',
+    color: '#12142C',
+  },
+  ContainerHeader: {
+    alignItems: 'center',
+    marginTop: 10,
+  },
+  image100: {
+    width: 100,
+    height: 100,
+  },
 });
 
 export default styles;

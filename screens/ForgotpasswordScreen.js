@@ -1,41 +1,74 @@
-import React, {useContext, useState} from 'react';
-import {View, Text, TouchableOpacity, Platform, StyleSheet} from 'react-native';
-import FormInput from '../components/FormInput';
-import FormButton from '../components/FormButton';
+import React from 'react';
+import {
+  Button,
+  Container,
+  ScreenContainer,
+  TextField,
+  Touchable,
+} from '@draftbit/ui';
+import {
+  Image,
+  KeyboardAvoidingView,
+  StatusBar,
+  Text,
+} from 'react-native';
 import styles from '../Styles/styles';
 
 const SignupScreen = ({navigation}) => {
-  const [email, setEmail] = useState();
+  const [email, setEmail] = React.useState(undefined);
 //   const [password, setPassword] = useState();
 //   const [confirmPassword, setConfirmPassword] = useState();
 
-  return (
-    <View style={styles.containerFS}>
-      <Text style={styles.text}>Востановление пароля</Text>
-      
-      <FormInput
-        labelValue={email}
-        onChangeText={(userEmail) => setEmail(userEmail)}
-        placeholderText="Email"
-        iconType="user"
-        keyboardType="email-address"
-        autoCapitalize="none"
-        autoCorrect={false}
-      />
-
-      <FormButton
-        buttonTitle="Напомнить пароль"
-        //onPress={() => register(email, password)}
-      />
-
-      <TouchableOpacity
-        style={styles.navButton}
-        onPress={() => {
-          navigation.goBack();
+return (
+  <ScreenContainer scrollable={true} hasSafeArea={true}>
+    <KeyboardAvoidingView
+      style={styles.keyboardAvoidingView}
+      behavior="padding"
+      keyboardVerticalOffset={60}
+      enabled={true}
+    >
+      <Container
+        style={styles.ContainerHeader}
+        elevation={0}
+        useThemeGutterPadding={true}
+      >
+        <Text style={styles.BigText}>
+        Востановление пароля
+        </Text>
+      </Container>
+      <Container useThemeGutterPadding={true} elevation={0}>
+        <TextField
+          style={styles.TextFieldSimple}
+          onChangeText={email => setEmail(email)}
+          value={email}
+          keyboardType="email-address"
+          label="Email"
+          type="underline"
+        />
+        <Button type="solid" onPress={() => {
+            try {
+              navigation.navigate('MainScreen', {});
+            } catch (err) {
+              console.error(err);
+            }
+          }}
+        >
+          Напомнить пароль
+        </Button>
+        <Touchable onPress={() => {
+          try {
+            navigation.goBack();
+          } catch (err) {
+            console.error(err);
+          }
         }}>
-        <Text style={styles.navButtonText}>У вас уже есть аккаунт? Войдите здесь</Text>
-      </TouchableOpacity>
-    </View>
+          <Text style={styles.TextLinkRight}>
+           У вас уже есть аккаунт? Войдите здесь
+          </Text>
+        </Touchable>
+      </Container>
+    </KeyboardAvoidingView>
+  </ScreenContainer>
   );
 };
 
