@@ -40,6 +40,7 @@ const styles = StyleSheet.create({
     marginLeft: '10%',
     marginRight: '10%',
   },
+  //-----------------------------
   TextOnCard: {
     marginTop: 5,
     marginLeft: 5,
@@ -47,13 +48,7 @@ const styles = StyleSheet.create({
     marginBottom: 5,
     color: '#12142C',
   },
-  ViewRow: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    alignSelf: 'stretch',
-    alignContent: 'center',
-  },
+ 
   ViewCard: {
     alignSelf: 'stretch',
     alignContent: 'stretch',
@@ -66,6 +61,7 @@ const styles = StyleSheet.create({
     borderRadius: 15,
     backgroundColor: '#A5ADB7',
   },
+  //-----------------------------
   buttonContainer: {
     marginTop: 10,
     width: '100%',
@@ -76,19 +72,54 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     borderRadius: 3,
   },
-  buttonText: {
+  buttonTextFB: {
     fontSize: 18,
     fontWeight: 'bold',
     color: '#ffffff',
     fontFamily: 'Lato-Regular',
   },
-  TextOnCard: {
+  //-----------------------------
+  inputContainer: {
     marginTop: 5,
-    marginLeft: 5,
-    marginRight: 5,
-    marginBottom: 5,
-    color: '#12142C',
+    marginBottom: 10,
+    width: '100%',
+    height: windowHeight / 15,
+    borderColor: '#ccc',
+    borderRadius: 3,
+    borderWidth: 1,
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: '#fff',
   },
+  iconStyle: {
+    padding: 10,
+    height: '100%',
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderRightColor: '#ccc',
+    borderRightWidth: 1,
+    width: 50,
+  },
+  input: {
+    padding: 10,
+    flex: 1,
+    fontSize: 16,
+    fontFamily: 'Lato-Regular',
+    color: '#333',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  inputField: {
+    padding: 10,
+    marginTop: 5,
+    marginBottom: 10,
+    width: windowWidth / 1.5,
+    height: windowHeight / 15,
+    fontSize: 16,
+    borderRadius: 8,
+    borderWidth: 1,
+  },
+  //----------------------------
   TextOnCardMiddle: {
     marginTop: 5,
     marginLeft: 5,
@@ -97,25 +128,8 @@ const styles = StyleSheet.create({
     color: '#12142C',
     alignSelf: 'center',
   },
-  ViewRow: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    alignSelf: 'stretch',
-    alignContent: 'center',
-  },
-  ViewCard: {
-    alignSelf: 'stretch',
-    alignContent: 'stretch',
-    paddingTop: 5,
-    paddingRight: 5,
-    paddingLeft: 5,
-    paddingBottom: 5,
-    marginTop: 5,
-    marginBottom: 5,
-    borderRadius: 15,
-    backgroundColor: '#A5ADB7',
-  },
+ //----------------------------
+  
   TextProgressCount: {
     marginTop: 5,
     marginLeft: 5,
@@ -133,44 +147,10 @@ const styles = StyleSheet.create({
     color: '#12142C',
     alignSelf: 'center',
   },
-  ViewCard: {
-    alignSelf: 'stretch',
-    alignContent: 'stretch',
-    paddingTop: 5,
-    paddingRight: 5,
-    paddingLeft: 5,
-    paddingBottom: 5,
-    marginTop: 5,
-    marginBottom: 5,
-    borderRadius: 15,
-    backgroundColor: '#A5ADB7',
-  },
-  TextOnCard: {
-    marginTop: 5,
-    marginLeft: 5,
-    marginRight: 5,
-    marginBottom: 5,
-    color: '#12142C',
-  },
-  ViewRow: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    alignSelf: 'stretch',
-    alignContent: 'center',
-  },
-  ViewCard: {
-    alignSelf: 'stretch',
-    alignContent: 'stretch',
-    paddingTop: 5,
-    paddingRight: 5,
-    paddingLeft: 5,
-    paddingBottom: 5,
-    marginTop: 5,
-    marginBottom: 5,
-    borderRadius: 15,
-    backgroundColor: '#A5ADB7',
-  },
+  //-------------------------
+
+  //-------------------------
+  
   ViewQuestion: {
     marginTop: 5,
     marginBottom: 5,
@@ -212,7 +192,8 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     borderColor: '#5A45FF',
   },
-  container: {
+  //----------------------------
+  containerFS: {
     backgroundColor: '#f9fafd',
     flex: 1,
     justifyContent: 'center',
@@ -246,6 +227,7 @@ const styles = StyleSheet.create({
     fontFamily: 'Lato-Regular',
     color: 'grey',
   },
+  //------------------------------
   ViewTopBar: {
     flexDirection: 'row',
     justifyContent: 'space-between',
@@ -263,7 +245,8 @@ const styles = StyleSheet.create({
     paddingLeft: 10,
     paddingBottom: 10,
   },
-  container: {
+  //------------------------------
+  containerLS: {
     justifyContent: 'center',
     alignItems: 'center',
     padding: 20,
@@ -274,58 +257,13 @@ const styles = StyleSheet.create({
     width: 150,
     resizeMode: 'cover',
   },
-  text: {
-    fontFamily: 'Kufam-SemiBoldItalic',
-    fontSize: 28,
-    marginBottom: 10,
-    color: '#051d5f',
-  },
-  navButton: {
-    marginTop: 15,
-  },
+  
+  
   forgotButton: {
     marginVertical: 35,
   },
-  navButtonText: {
-    fontSize: 18,
-    fontWeight: '500',
-    color: '#2e64e5',
-    fontFamily: 'Lato-Regular',
-  },
-  ViewTopBar: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    paddingTop: 5,
-    paddingRight: 5,
-    paddingLeft: 5,
-    paddingBottom: 5,
-    backgroundColor: '#12142C',
-  },
-  ViewMainContent: {
-    alignSelf: 'stretch',
-    alignContent: 'center',
-    paddingTop: 10,
-    paddingRight: 10,
-    paddingLeft: 10,
-    paddingBottom: 10,
-  },
-  ViewTopBar: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    paddingTop: 5,
-    paddingRight: 5,
-    paddingLeft: 5,
-    paddingBottom: 5,
-    backgroundColor: '#12142C',
-  },
-  ViewMainContent: {
-    alignSelf: 'stretch',
-    alignContent: 'center',
-    paddingTop: 10,
-    paddingRight: 10,
-    paddingLeft: 10,
-    paddingBottom: 10,
-  },
+  //------------------------
+  
   container: {
     backgroundColor: '#f9fafd',
     flex: 1,
@@ -333,33 +271,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     padding: 20,
   },
-  text: {
-    fontFamily: 'Kufam-SemiBoldItalic',
-    fontSize: 28,
-    marginBottom: 10,
-    color: '#051d5f',
-  },
-  navButton: {
-    marginTop: 15,
-  },
-  navButtonText: {
-    fontSize: 18,
-    fontWeight: '500',
-    color: '#2e64e5',
-    fontFamily: 'Lato-Regular',
-  },
-  textPrivate: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    marginVertical: 35,
-    justifyContent: 'center',
-  },
-  color_textPrivate: {
-    fontSize: 13,
-    fontWeight: '400',
-    fontFamily: 'Lato-Regular',
-    color: 'grey',
-  },
+  
 });
 
 export default styles;

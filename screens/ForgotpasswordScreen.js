@@ -10,7 +10,7 @@ const SignupScreen = ({navigation}) => {
 //   const [confirmPassword, setConfirmPassword] = useState();
 
   return (
-    <View style={styles.container}>
+    <View style={styles.containerFS}>
       <Text style={styles.text}>Востановление пароля</Text>
       
       <FormInput
@@ -42,7 +42,7 @@ const SignupScreen = ({navigation}) => {
 export default SignupScreen;
 
 /*const styles = StyleSheet.create({
-  container: {
+  containerFS: {
     backgroundColor: '#f9fafd',
     flex: 1,
     justifyContent: 'center',

@@ -6,7 +6,7 @@ import styles from '../Styles/styles';
 const FormButton = ({buttonTitle, ...rest}) => {
   return (
     <TouchableOpacity style={styles.buttonContainer} {...rest}>
-      <Text style={styles.buttonText}>{buttonTitle}</Text>
+      <Text style={styles.buttonTextFB}>{buttonTitle}</Text>
     </TouchableOpacity>
   );
 };
@@ -24,7 +24,7 @@ export default FormButton;
     justifyContent: 'center',
     borderRadius: 3,
   },
-  buttonText: {
+  buttonTextFB: {
     fontSize: 18,
     fontWeight: 'bold',
     color: '#ffffff',

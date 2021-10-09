@@ -18,7 +18,7 @@ const LoginScreen = props => {
   const { navigation } = props;
 
   return (
-    <ScrollView contentContainerStyle={styles.container}>
+    <ScrollView contentContainerStyle={styles.containerLS}>
       <Image
         //source={require('../assets/rn-social-logo.png')}
         style={styles.logo}
@@ -84,7 +84,7 @@ const LoginScreen = props => {
 export default LoginScreen;
 
 /*const styles = StyleSheet.create({
-  container: {
+  containerLS: {
     justifyContent: 'center',
     alignItems: 'center',
     padding: 20,
