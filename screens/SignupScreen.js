@@ -78,7 +78,7 @@ const SignupScreen = ({navigation}) => {
           </Button>
           <Touchable onPress={() => {
             try {
-              navigation.navigate('ForgotpasswordScreen', {});
+              navigation.navigate('LoginScreen', {});
             } catch (err) {
               console.error(err);
             }
