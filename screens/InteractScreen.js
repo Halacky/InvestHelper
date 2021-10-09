@@ -3,6 +3,7 @@ import { FAB, ScreenContainer} from '@draftbit/ui';
 import { StatusBar, StyleSheet, View } from 'react-native';
 import InfoCard from '../components/InfoCardComponent';
 import TwoOptions from '../components/TwoOptionsComponent';
+import styles from '../Styles/styles';
 
 const InteractScreen = props => {
 
@@ -42,7 +43,7 @@ const InteractScreen = props => {
   );
 };
 
-const styles = StyleSheet.create({
+/*const styles = StyleSheet.create({
   ViewTopBar: {
     flexDirection: 'row',
     justifyContent: 'space-between',
@@ -60,6 +61,6 @@ const styles = StyleSheet.create({
     paddingLeft: 10,
     paddingBottom: 10,
   },
-});
+});*/
 
 export default InteractScreen;

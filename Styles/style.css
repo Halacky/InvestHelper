@@ -1,0 +1,398 @@
+TextBalance {
+    align-self: 'center';
+    text-align: 'center';
+    font-size: 40;
+  };
+  TextChangeUp {
+    margin-top: 5;
+    margin-left: 5;
+    margin-right: 5;
+    margin-bottom: 5;
+    color: '#3BC9EA';
+  };
+  TextChangeDown {
+    margin-top: 5;
+    margin-left: 5;
+    margin-right: 5;
+    margin-bottom: 5;
+    color: '#FF4564';
+  };
+  ViewRow {
+    flex-direction: 'row';
+    align-items: 'center';
+    justify-content: 'space-between';
+    align-self: 'stretch';
+    align-content: 'center';
+  };
+  ViewBalance {
+    margin-top: 5;
+    margin-bottom: 5;
+    padding-top: 5;
+    padding-left: 5;
+    padding-right: 5;
+    padding-bottom: 5;
+    margin-left: '10%';
+    margin-right: '10%';
+  };
+  TextOnCard {
+    margin-top: 5;
+    margin-left: 5;
+    margin-right: 5;
+    margin-bottom: 5;
+    color: '#12142C';
+  };
+  ViewRow {
+    flex-direction: 'row';
+    align-items: 'center';
+    justify-content: 'space-between';
+    align-self: 'stretch';
+    align-content: 'center';
+  };
+  ViewCard {
+    align-self: 'stretch';
+    align-content: 'stretch';
+    padding-top: 5;
+    padding-right: 5;
+    padding-left: 5;
+    padding-bottom: 5;
+    margin-top: 5;
+    margin-bottom: 5;
+    border-radius: 15;
+    background-color: '#A5ADB7';
+  };
+  buttonContainer {
+    margin-top: 10;
+    width: '100%';
+    height: windowHeight / 15;
+    background-color: '#2e64e5';
+    padding: 10;
+    align-items: 'center';
+    justify-content: 'center';
+    border-radius: 3;
+  };
+  buttonText {
+    font-size: 18;
+    font-weight: 'bold';
+    color: '#ffffff';
+    font-family: 'Lato-Regular';
+  };
+  inputContainer {
+    margin-top: 5;
+    margin-bottom: 10;
+    width: '100%';
+    height: windowHeight / 15;
+    border-color: '#ccc';
+    border-radius: 3;
+    border-width: 1;
+    flex-direction: 'row';
+    align-items: 'center';
+    background-color: '#fff';
+  };
+  iconStyle {
+    padding: 10;
+    height: '100%';
+    justify-content: 'center';
+    align-items: 'center';
+    border-right-color: '#ccc';
+    border-right-width: 1;
+    width: 50;
+  };
+  input {
+    padding: 10;
+    flex: 1;
+    font-size: 16;
+    font-family: 'Lato-Regular';
+    color: '#333';
+    justify-content: 'center';
+    align-items: 'center';
+  };
+  inputField {
+    padding: 10;
+    margin-top: 5;
+    margin-bottom: 10;
+    width: windowWidth / 1.5;
+    height: windowHeight / 15;
+    font-size: 16;
+    border-radius: 8;
+    border-width: 1;
+  };
+  TextOnCard {
+    margin-top: 5;
+    margin-left: 5;
+    margin-right: 5;
+    margin-bottom: 5;
+    color: '#12142C';
+  };
+  TextOnCardMiddle {
+    margin-top: 5;
+    margin-left: 5;
+    margin-right: 5;
+    margin-bottom: 5;
+    color: '#12142C';
+    align-self: 'center';
+  };
+  ViewRow {
+    flex-direction: 'row';
+    align-items: 'center';
+    justify-content: 'space-between';
+    align-self: 'stretch';
+    align-content: 'center';
+  };
+  ViewCard {
+    align-self: 'stretch';
+    align-content: 'stretch';
+    padding-top: 5;
+    padding-right: 5;
+    padding-left: 5;
+    padding-bottom: 5;
+    margin-top: 5;
+    margin-bottom: 5;
+    border-radius: 15;
+    background-color: '#A5ADB7';
+  };
+  TextProgressCount {
+    margin-top: 5;
+    margin-left: 5;
+    margin-right: 5;
+    margin-bottom: 5;
+    font-size: 20;
+    color: '#12142C';
+    align-self: 'center';
+  };
+  TextOnProgressCard {
+    margin-top: 5;
+    margin-left: 5;
+    margin-right: 5;
+    margin-bottom: 5;
+    color: '#12142C';
+    align-self: 'center';
+  };
+  ViewCard {
+    align-self: 'stretch';
+    align-content: 'stretch';
+    padding-top: 5;
+    padding-right: 5;
+    padding-left: 5;
+    padding-bottom: 5;
+    margin-top: 5;
+    margin-bottom: 5;
+    border-radius: 15;
+    background-color: '#A5ADB7';
+  };
+  TextOnCard {
+    margin-top: 5;
+    margin-left: 5;
+    margin-right: 5;
+    margin-bottom: 5;
+    color: '#12142C';
+  };
+  ViewRow {
+    flex-direction: 'row';
+    align-items: 'center';
+    justify-content: 'space-between';
+    align-self: 'stretch';
+    align-content: 'center';
+  };
+  ViewCard {
+    align-self: 'stretch';
+    align-content: 'stretch';
+    padding-top: 5;
+    padding-right: 5;
+    padding-left: 5;
+    padding-bottom: 5;
+    margin-top: 5;
+    margin-bottom: 5;
+    border-radius: 15;
+    background-color: '#A5ADB7';
+  };
+  ViewQuestion {
+    margin-top: 5;
+    margin-bottom: 5;
+    padding-top: 5;
+    padding-left: 5;
+    padding-right: 5;
+    padding-bottom: 5;
+  };
+  TextQuestion {
+    align-self: 'center';
+    text-align: 'center';
+    font-size: 18;
+    color: '#12142C';
+  };
+  ViewButtonsRow {
+    flex-direction: 'row';
+    align-items: 'center';
+    justify-content: 'space-between';
+    align-self: 'stretch';
+    align-content: 'center';
+    padding-top: 5;
+    padding-left: 5;
+    padding-right: 5;
+    padding-bottom: 5;
+  };
+  ButtonPrimary {
+    border-radius: 8;
+    font-family: 'System';
+    font-weight: '700';
+    text-align: 'center';
+    background-color: '#5A45FF';
+  };
+  ButtonSecondary {
+    background-color: 'transparent';
+    border-radius: 8;
+    font-family: 'System';
+    font-weight: '700';
+    border-width: 1;
+    text-align: 'center';
+    border-color: '#5A45FF';
+  };
+  container {
+    background-color: '#f9fafd';
+    flex: 1;
+    justify-content: 'center';
+    align-items: 'center';
+    padding: 20;
+  };
+  text {
+    font-family: 'Kufam-SemiBoldItalic';
+    font-size: 28;
+    margin-bottom: 10;
+    color: '#051d5f';
+  };
+  navButton {
+    margin-top: 15;
+  };
+  navButtonText {
+    font-size: 18;
+    font-weight: '500';
+    color: '#2e64e5';
+    font-family: 'Lato-Regular';
+  };
+  textPrivate {
+    flex-direction: 'row';
+    flex-wrap: 'wrap';
+    marginVertical: 35;
+    justify-content: 'center';
+  };
+  color_textPrivate {
+    font-size: 13;
+    font-weight: '400';
+    font-family: 'Lato-Regular';
+    color: 'grey';
+  };
+  ViewTopBar {
+    flex-direction: 'row';
+    justify-content: 'space-between';
+    padding-top: 5;
+    padding-right: 5;
+    padding-left: 5;
+    padding-bottom: 5;
+    background-color: '#12142C';
+  };
+  ViewMainContent {
+    align-self: 'stretch';
+    align-content: 'center';
+    padding-top: 10;
+    padding-right: 10;
+    padding-left: 10;
+    padding-bottom: 10;
+  };
+  container {
+    justify-content: 'center';
+    align-items: 'center';
+    padding: 20;
+    padding-top: 50
+  };
+  logo {
+    height: 150;
+    width: 150;
+    resizeMode: 'cover';
+  };
+  text {
+    font-family: 'Kufam-SemiBoldItalic';
+    font-size: 28;
+    margin-bottom: 10;
+    color: '#051d5f';
+  };
+  navButton {
+    margin-top: 15;
+  };
+  forgotButton {
+    margin-top:35;
+    margin-bottom:35;
+  };
+  navButtonText {
+    font-size: 18;
+    font-weight: '500';
+    color: '#2e64e5';
+    font-family: 'Lato-Regular';
+  };
+  ViewTopBar {
+    flex-direction: 'row';
+    justify-content: 'space-between';
+    padding-top: 5;
+    padding-right: 5;
+    padding-left: 5;
+    padding-bottom: 5;
+    background-color: '#12142C';
+  };
+  ViewMainContent {
+    align-self: 'stretch';
+    align-content: 'center';
+    padding-top: 10;
+    padding-right: 10;
+    padding-left: 10;
+    padding-bottom: 10;
+  };
+  ViewTopBar {
+    flex-direction: 'row';
+    justify-content: 'space-between';
+    padding-top: 5;
+    padding-right: 5;
+    padding-left: 5;
+    padding-bottom: 5;
+    background-color: '#12142C';
+  };
+  ViewMainContent {
+    align-self: 'stretch';
+    align-content: 'center';
+    padding-top: 10;
+    padding-right: 10;
+    padding-left: 10;
+    padding-bottom: 10;
+  };
+  container {
+    background-color: '#f9fafd';
+    flex: 1;
+    justify-content: 'center';
+    align-items: 'center';
+    padding: 20;
+  };
+  text {
+    font-family: 'Kufam-SemiBoldItalic';
+    font-size: 28;
+    margin-bottom: 10;
+    color: '#051d5f';
+  };
+  navButton {
+    margin-top: 15;
+  };
+  navButtonText {
+    font-size: 18;
+    font-weight: '500';
+    color: '#2e64e5';
+    font-family: 'Lato-Regular';
+  };
+  textPrivate {
+    flex-direction: 'row';
+    flex-wrap: 'wrap';
+    margin-top:35;
+    margin-bottom:35;
+    justify-content: 'center';
+  };
+  color_textPrivate {
+    font-size: 13;
+    font-weight: '400';
+    font-family: 'Lato-Regular';
+    color: 'grey';
+  };

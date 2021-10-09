@@ -7,6 +7,7 @@ import BalanceInfo from '../components/BalanceInfoComponent';
 import TouchCard from '../components/TouchCardComponent';
 import InfoCard from '../components/InfoCardComponent';
 import TwoOptions from '../components/TwoOptionsComponent';
+import styles from '../Styles/styles';
 
 const MainScreen = props => {
 
@@ -50,7 +51,7 @@ const MainScreen = props => {
   );
 };
 
-const styles = StyleSheet.create({
+/*const styles = StyleSheet.create({
   ViewTopBar: {
     flexDirection: 'row',
     justifyContent: 'space-between',
@@ -68,6 +69,6 @@ const styles = StyleSheet.create({
     paddingLeft: 10,
     paddingBottom: 10,
   },
-});
+});*/
 
 export default MainScreen;

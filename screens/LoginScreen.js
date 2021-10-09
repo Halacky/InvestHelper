@@ -1,4 +1,5 @@
 import React, {useContext, useState} from 'react';
+import styles from '../Styles/styles';
 import {
   View,
   Text,
@@ -17,7 +18,7 @@ const LoginScreen = props => {
   const { navigation } = props;
 
   return (
-    <ScrollView contentContainerStyle={styles.container}>
+    <ScrollView contentContainerStyle={styles.containerLS}>
       <Image
         //source={require('../assets/rn-social-logo.png')}
         style={styles.logo}
@@ -82,8 +83,8 @@ const LoginScreen = props => {
 
 export default LoginScreen;
 
-const styles = StyleSheet.create({
-  container: {
+/*const styles = StyleSheet.create({
+  containerLS: {
     justifyContent: 'center',
     alignItems: 'center',
     padding: 20,
@@ -112,4 +113,4 @@ const styles = StyleSheet.create({
     color: '#2e64e5',
     fontFamily: 'Lato-Regular',
   },
-});
+});*/

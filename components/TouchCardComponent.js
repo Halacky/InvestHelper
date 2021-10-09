@@ -1,6 +1,7 @@
 import React from 'react';
 import { Touchable } from '@draftbit/ui';
 import { StyleSheet, View, Text } from 'react-native';
+import styles from '../Styles/styles';
 
 const TouchCard = props => {
 
@@ -36,7 +37,7 @@ const TouchCard = props => {
   );
 };
 
-const styles = StyleSheet.create({
+/*const styles = StyleSheet.create({
   TextOnCard: {
     marginTop: 5,
     marginLeft: 5,
@@ -63,6 +64,6 @@ const styles = StyleSheet.create({
     borderRadius: 15,
     backgroundColor: '#A5ADB7',
   },
-});
+});*/
 
 export default TouchCard;

@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyleSheet, View, Text } from 'react-native';
+import styles from '../Styles/styles';
 
 const BalanceInfo = props => {
   return (
@@ -22,7 +23,7 @@ const BalanceInfo = props => {
   );
 };
 
-const styles = StyleSheet.create({
+/*const styles = StyleSheet.create({
   TextBalance: {
     alignSelf: 'center',
     textAlign: 'center',
@@ -59,6 +60,6 @@ const styles = StyleSheet.create({
     marginLeft: '10%',
     marginRight: '10%',
   },
-});
+});*/
 
 export default BalanceInfo;
