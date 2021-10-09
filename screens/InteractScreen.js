@@ -43,24 +43,4 @@ const InteractScreen = props => {
   );
 };
 
-/*const styles = StyleSheet.create({
-  ViewTopBar: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    paddingTop: 5,
-    paddingRight: 5,
-    paddingLeft: 5,
-    paddingBottom: 5,
-    backgroundColor: '#12142C',
-  },
-  ViewMainContent: {
-    alignSelf: 'stretch',
-    alignContent: 'center',
-    paddingTop: 10,
-    paddingRight: 10,
-    paddingLeft: 10,
-    paddingBottom: 10,
-  },
-});*/
-
 export default InteractScreen;
