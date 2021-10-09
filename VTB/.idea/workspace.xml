@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f5118cd8-2e4f-4024-9d90-d199af261e6e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../package-lock.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="rest-services" />
+        <option value="ServiceInterface" />
+        <option value="ServiceBean" />
+        <option value="Role" />
+        <option value="Entity" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="21-erm" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="false" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1zF7eHHZeUv0NmRy0QkcmM27xwe" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.scala.compiler.ScalaCompileServerForm" />
+  </component>
+  <component name="RunManager" selected="CUBA Application.CUBA Application">
+    <configuration name="localhost:8787" type="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="8787" />
+      <option name="AUTO_RESTART" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="CUBA Application" type="cubaTomcatConfiguration" factoryName="CUBA Application" jdk="#USE_PROJECT_JDK" jvmArgs="" environmentVariables="">
+      <predefined_log_file enabled="true" id="catalina" />
+      <method v="2">
+        <option name="DeployTomcatTaskProvider" enabled="true" />
+        <option name="CopyDbDriversTaskProvider" enabled="true" />
+        <option name="CheckDataBaseTaskProvider" enabled="true" />
+        <option name="AddJvmOptionsTomcatTaskProvider" enabled="true" />
+        <option name="DeployCubaApplicationTaskProvider" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f5118cd8-2e4f-4024-9d90-d199af261e6e" name="Default Changelist" comment="" />
+      <created>1633732075131</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1633732075131</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1633760411303">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1633760411303" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1633732144197">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1633732144197" />
+    <state width="1493" height="342" key="GridCell.Tab.0.bottom" timestamp="1633764517845">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="342" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1633764517845" />
+    <state width="1493" height="342" key="GridCell.Tab.0.center" timestamp="1633764517844">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="342" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1633764517844" />
+    <state width="1493" height="342" key="GridCell.Tab.0.left" timestamp="1633764517844">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="342" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1633764517844" />
+    <state width="1493" height="342" key="GridCell.Tab.0.right" timestamp="1633764517844">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="342" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1633764517844" />
+    <state width="1493" height="342" key="GridCell.Tab.1.bottom" timestamp="1633764517845">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="342" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1633764517845" />
+    <state width="1493" height="342" key="GridCell.Tab.1.center" timestamp="1633764517845">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="342" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1633764517845" />
+    <state width="1493" height="342" key="GridCell.Tab.1.left" timestamp="1633764517845">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="342" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1633764517845" />
+    <state width="1493" height="342" key="GridCell.Tab.1.right" timestamp="1633764517845">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="342" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1633764517845" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1633764266927">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1633764266927" />
+    <state x="833" y="198" key="com.haulmont.studio.intellij.action.creation.template.CreateFromTemplateWizard" timestamp="1633760954607">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="833" y="198" key="com.haulmont.studio.intellij.action.creation.template.CreateFromTemplateWizard/0.0.1536.824@0.0.1536.824" timestamp="1633760954607" />
+    <state x="462" y="144" width="611" height="536" key="find.popup" timestamp="1633736927873">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="462" y="144" width="611" height="536" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1633736927873" />
+    <state x="209" y="137" key="new project wizard" timestamp="1633732183741">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="209" y="137" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1633732183741" />
+    <state x="425" y="66" width="672" height="676" key="search.everywhere.popup" timestamp="1633762959990">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="66" width="672" height="676" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1633762959990" />
+  </component>
+</project>

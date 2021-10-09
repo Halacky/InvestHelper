@@ -1,57 +1,95 @@
-import React, {useContext, useState} from 'react';
-import {View, Text, TouchableOpacity, Platform, StyleSheet} from 'react-native';
-import FormInput from '../components/FormInput';
-import FormButton from '../components/FormButton';
+import React from 'react';
+import {
+  Button,
+  Container,
+  ScreenContainer,
+  TextField,
+  Touchable,
+} from '@draftbit/ui';
+import {
+  Image,
+  KeyboardAvoidingView,
+  StatusBar,
+  Text,
+} from 'react-native';
 import styles from '../Styles/styles';
 
 const SignupScreen = ({navigation}) => {
-  const [email, setEmail] = useState();
-  const [password, setPassword] = useState();
-  const [confirmPassword, setConfirmPassword] = useState();
+  const [email, setEmail] = React.useState(undefined);
+  const [password, setPassword] = React.useState(undefined);
+  const [confirmPassword, setConfirmPassword] = React.useState(undefined);
+
 
   return (
-    <View style={styles.container}>
-      <Text style={styles.text}>Создать аккаунт</Text>
-
-      <FormInput
-        labelValue={email}
-        onChangeText={(userEmail) => setEmail(userEmail)}
-        placeholderText="Email"
-        iconType="user"
-        keyboardType="email-address"
-        autoCapitalize="none"
-        autoCorrect={false}
-      />
-
-      <FormInput
-        labelValue={password}
-        onChangeText={(userPassword) => setPassword(userPassword)}
-        placeholderText="Пароль"
-        iconType="lock"
-        secureTextEntry={true}
-      />
-
-      <FormInput
-        labelValue={confirmPassword}
-        onChangeText={(userPassword) => setConfirmPassword(userPassword)}
-        placeholderText="Подтвердите пароль"
-        iconType="lock"
-        secureTextEntry={true}
-      />
-
-      <FormButton
-        buttonTitle="Зарегистрироваться"
-        onPress={() => register(email, password)}
-      />
-
-      <TouchableOpacity
-        style={styles.navButton}
-        onPress={() => {
-          navigation.goBack();
-        }}>
-        <Text style={styles.navButtonText}>У вас уже есть аккаунт? Войдите здесь</Text>
-      </TouchableOpacity>
-    </View>
+    <ScreenContainer scrollable={true} hasSafeArea={true}>
+      <KeyboardAvoidingView
+        style={styles.keyboardAvoidingView}
+        behavior="padding"
+        keyboardVerticalOffset={60}
+        enabled={true}
+      >
+        <Container
+          style={styles.ContainerHeader}
+          elevation={0}
+          useThemeGutterPadding={true}
+        >
+          <Text style={styles.BigText}>
+           Создать аккаунт
+          </Text>
+        </Container>
+        <Container useThemeGutterPadding={true} elevation={0}>
+          <TextField
+            style={styles.TextFieldSimple}
+            onChangeText={email => setEmail(email)}
+            value={email}
+            keyboardType="email-address"
+            label="Email"
+            type="underline"
+          />
+          <TextField
+            style={styles.TextFieldSimple}
+            onChangeText={password => setPassword(password)}
+            secureTextEntry={true}
+            value={password}
+            leftIconMode="inset"
+            keyboardType="default"
+            label="Password"
+            type="underline"
+          />
+                    <TextField
+            style={styles.TextFieldSimple}
+            onChangeText={confirmPassword => setConfirmPassword(confirmPassword)}
+            secureTextEntry={true}
+            value={confirmPassword}
+            leftIconMode="inset"
+            keyboardType="default"
+            label="Confirm password"
+            type="underline"
+          />
+          <Button type="solid" onPress={() => {
+              try {
+                navigation.navigate('LoginScreen', {});
+              } catch (err) {
+                console.error(err);
+              }
+            }}
+          >
+           Зарегистрироваться
+          </Button>
+          <Touchable onPress={() => {
+            try {
+              navigation.navigate('ForgotpasswordScreen', {});
+            } catch (err) {
+              console.error(err);
+            }
+          }}>
+            <Text style={styles.TextLinkRight}>
+             У вас уже есть аккаунт? Войдите здесь
+            </Text>
+          </Touchable>
+        </Container>
+      </KeyboardAvoidingView>
+    </ScreenContainer>
   );
 };
 
