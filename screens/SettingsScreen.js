@@ -1,6 +1,7 @@
 import React from 'react';
 import { FAB, ScreenContainer} from '@draftbit/ui';
 import { StatusBar, StyleSheet, View } from 'react-native';
+import styles from '../Styles/styles';
 
 const SettingsScreen = props => {
 
@@ -36,7 +37,7 @@ const SettingsScreen = props => {
   );
 };
 
-const styles = StyleSheet.create({
+/*const styles = StyleSheet.create({
   ViewTopBar: {
     flexDirection: 'row',
     justifyContent: 'space-between',
@@ -54,6 +55,6 @@ const styles = StyleSheet.create({
     paddingLeft: 10,
     paddingBottom: 10,
   },
-});
+});*/
 
 export default SettingsScreen;

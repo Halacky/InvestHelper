@@ -2,6 +2,7 @@ import React, {useContext, useState} from 'react';
 import {View, Text, TouchableOpacity, Platform, StyleSheet} from 'react-native';
 import FormInput from '../components/FormInput';
 import FormButton from '../components/FormButton';
+import styles from '../Styles/styles';
 
 const SignupScreen = ({navigation}) => {
   const [email, setEmail] = useState();
@@ -40,7 +41,7 @@ const SignupScreen = ({navigation}) => {
 
 export default SignupScreen;
 
-const styles = StyleSheet.create({
+/*const styles = StyleSheet.create({
   container: {
     backgroundColor: '#f9fafd',
     flex: 1,
@@ -75,4 +76,4 @@ const styles = StyleSheet.create({
     fontFamily: 'Lato-Regular',
     color: 'grey',
   },
-});
+});*/

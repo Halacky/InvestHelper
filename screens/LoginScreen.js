@@ -1,4 +1,5 @@
 import React, {useContext, useState} from 'react';
+import styles from '../Styles/styles';
 import {
   View,
   Text,
@@ -82,7 +83,7 @@ const LoginScreen = props => {
 
 export default LoginScreen;
 
-const styles = StyleSheet.create({
+/*const styles = StyleSheet.create({
   container: {
     justifyContent: 'center',
     alignItems: 'center',
@@ -112,4 +113,4 @@ const styles = StyleSheet.create({
     color: '#2e64e5',
     fontFamily: 'Lato-Regular',
   },
-});
+});*/

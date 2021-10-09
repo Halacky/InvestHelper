@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, View, Text } from 'react-native';
 import * as Progress from 'react-native-progress';
+import styles from '../Styles/styles';
 
 const ProgressCard = props => {
   return (
@@ -12,7 +13,7 @@ const ProgressCard = props => {
   );
 };
 
-const styles = StyleSheet.create({
+/*const styles = StyleSheet.create({
   TextProgressCount: {
     marginTop: 5,
     marginLeft: 5,
@@ -42,6 +43,6 @@ const styles = StyleSheet.create({
     borderRadius: 15,
     backgroundColor: '#A5ADB7',
   },
-});
+});*/
 
 export default ProgressCard;
