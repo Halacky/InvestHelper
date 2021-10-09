@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, View, Text } from 'react-native';
 import { ButtonOutline, ButtonSolid } from '@draftbit/ui';
+import styles from '../Styles/styles';
 
 const TwoOptions = props => {
   return (
@@ -26,7 +27,7 @@ const TwoOptions = props => {
   );
 };
 
-const styles = StyleSheet.create({
+/*const styles = StyleSheet.create({
   ViewQuestion: {
     marginTop: 5,
     marginBottom: 5,
@@ -68,6 +69,6 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     borderColor: '#5A45FF',
   },
-});
+});*/
 
 export default TwoOptions;
