@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyleSheet, View, Text } from 'react-native';
+import styles from '../Styles/styles';
 
 const BalanceInfo = props => {
   return (
@@ -21,44 +22,5 @@ const BalanceInfo = props => {
     </View>
   );
 };
-
-const styles = StyleSheet.create({
-  TextBalance: {
-    alignSelf: 'center',
-    textAlign: 'center',
-    fontSize: 40,
-  },
-  TextChangeUp: {
-    marginTop: 5,
-    marginLeft: 5,
-    marginRight: 5,
-    marginBottom: 5,
-    color: '#3BC9EA',
-  },
-  TextChangeDown: {
-    marginTop: 5,
-    marginLeft: 5,
-    marginRight: 5,
-    marginBottom: 5,
-    color: '#FF4564',
-  },
-  ViewRow: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    alignSelf: 'stretch',
-    alignContent: 'center',
-  },
-  ViewBalance: {
-    marginTop: 5,
-    marginBottom: 5,
-    paddingTop: 5,
-    paddingLeft: 5,
-    paddingRight: 5,
-    paddingBottom: 5,
-    marginLeft: '10%',
-    marginRight: '10%',
-  },
-});
 
 export default BalanceInfo;
